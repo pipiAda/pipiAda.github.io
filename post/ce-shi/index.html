@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>关于 | Gridea</title>
+<title>测试 | Gridea</title>
 <link rel="shortcut icon" href="http://pipiAda.github.io/favicon.ico?v=1559446453323">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -74,23 +74,50 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              关于
+              测试
             </h2>
             <div class="post-info">
               <time class="post-time">
-                · 2019-01-25 ·
+                · 2019-06-02 ·
               </time>
               
             </div>
             
             <div class="post-content">
-              <p>皮皮蕊的博客
-学习 Arduino!</p>
+              <p>代码格式
+//Function: 超声波测距，串口显示距离</p>
+<p>#include &lt;SR04.h&gt;</p>
+<p>#define TRIG_pin 13</p>
+<p>#define ECHO_pin 11</p>
+<p>SR04 my_SR04 = SR04(ECHO_pin,TRIG_pin);// 创建对象</p>
+<p>long distance;// 用于储存距离的变量</p>
+<p>void setup(){</p>
+<p>Serial.begin(9600);</p>
+<p>delay(1000);// 适当延时使初始化</p>
+<p>}</p>
+<p>void loop(){</p>
+<p>distance = my_SR04.Distance();</p>
+<p>Serial.print(distance);</p>
+<p>Serial.println(&quot;cm&quot;);</p>
+<p>//delay(100);</p>
+<p>}</p>
+<p>*粗体注意</p>
+<p>右上角搜索那个图标是打开监测数据，看数据的</p>
+<p>总</p>
 
             </div>
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="http://pipiAda.github.io/post/hello-gridea">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
         
 
         

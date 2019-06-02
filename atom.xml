@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://pipiAda.github.io</id>
     <title>Gridea</title>
-    <updated>2019-06-02T03:32:22.266Z</updated>
+    <updated>2019-06-02T03:34:14.765Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://pipiAda.github.io"/>
     <link rel="self" href="http://pipiAda.github.io/atom.xml"/>
@@ -10,6 +10,34 @@
     <logo>http://pipiAda.github.io/images/avatar.png</logo>
     <icon>http://pipiAda.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[测试]]></title>
+        <id>http://pipiAda.github.io/post/ce-shi</id>
+        <link href="http://pipiAda.github.io/post/ce-shi">
+        </link>
+        <updated>2019-06-02T03:34:05.000Z</updated>
+        <content type="html"><![CDATA[<p>代码格式
+//Function: 超声波测距，串口显示距离</p>
+<p>#include &lt;SR04.h&gt;</p>
+<p>#define TRIG_pin 13</p>
+<p>#define ECHO_pin 11</p>
+<p>SR04 my_SR04 = SR04(ECHO_pin,TRIG_pin);// 创建对象</p>
+<p>long distance;// 用于储存距离的变量</p>
+<p>void setup(){</p>
+<p>Serial.begin(9600);</p>
+<p>delay(1000);// 适当延时使初始化</p>
+<p>}</p>
+<p>void loop(){</p>
+<p>distance = my_SR04.Distance();</p>
+<p>Serial.print(distance);</p>
+<p>Serial.println(&quot;cm&quot;);</p>
+<p>//delay(100);</p>
+<p>}</p>
+<p>*粗体注意</p>
+<p>右上角搜索那个图标是打开监测数据，看数据的</p>
+<p>总</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>http://pipiAda.github.io/post/hello-gridea</id>
